@@ -6,53 +6,55 @@ import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 
 const images = [
-  { src: portfolio1, alt: "Bridal makeup" },
-  { src: portfolio2, alt: "Quinceañera makeup" },
-  { src: portfolio3, alt: "Event makeup" },
-  { src: portfolio4, alt: "Makeup application" },
-  { src: portfolio5, alt: "Natural beauty" },
-  { src: portfolio6, alt: "Eye detail" },
+  { src: portfolio1, alt: "Bridal makeup", span: "md:col-span-1 md:row-span-2" },
+  { src: portfolio2, alt: "Quinceañera makeup", span: "md:col-span-1" },
+  { src: portfolio3, alt: "Event makeup", span: "md:col-span-1" },
+  { src: portfolio4, alt: "Makeup application", span: "md:col-span-1" },
+  { src: portfolio5, alt: "Natural beauty", span: "md:col-span-1 md:row-span-2" },
+  { src: portfolio6, alt: "Eye detail", span: "md:col-span-1" },
 ];
 
 const PortfolioSection = () => {
   return (
-    <section id="portafolio" className="section-padding bg-background">
+    <section id="portafolio" className="px-6 md:px-12 lg:px-20 py-20 md:py-32">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-on-scroll">
-          <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-3">
+        <div className="text-center mb-20 animate-on-scroll">
+          <p className="font-body text-[10px] uppercase tracking-[0.35em] text-muted-foreground mb-4">
             Portafolio / Portfolio
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-light text-foreground">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-foreground">
             Mi Trabajo
           </h2>
-          <div className="w-12 h-px bg-primary mx-auto mt-6" />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        {/* Asymmetric editorial grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
           {images.map((img, i) => (
             <div
               key={i}
-              className="animate-on-scroll aspect-[3/4] overflow-hidden group cursor-pointer"
+              className={`animate-on-scroll overflow-hidden group cursor-pointer ${img.span}`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                width={800}
-                height={1024}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              <div className="aspect-[3/4] h-full">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  width={800}
+                  height={1024}
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000 ease-out"
+                />
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12 animate-on-scroll">
+        <div className="text-center mt-16 animate-on-scroll">
           <a
             href="https://instagram.com/marianeunfeldmakeup"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 border border-primary text-primary font-body text-sm uppercase tracking-[0.15em] hover:bg-primary hover:text-primary-foreground transition-all duration-500"
+            className="inline-block font-body text-[11px] uppercase tracking-[0.25em] text-foreground border-b border-foreground pb-1 hover:text-primary hover:border-primary transition-colors duration-500"
           >
             Ver más en Instagram
           </a>
