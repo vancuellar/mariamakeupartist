@@ -6,43 +6,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --background: 40 25% 97%;
+    --foreground: 0 0% 12%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 15%;
+    --card: 40 20% 95%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover: 40 25% 97%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 345 60% 30%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 345 45% 35%;
+    --primary-foreground: 40 25% 97%;
 
-    --secondary: 345 15% 92%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 40 15% 93%;
+    --secondary-foreground: 0 0% 12%;
 
-    --muted: 0 0% 96%;
+    --muted: 40 10% 92%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 345 60% 30%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 345 45% 35%;
+    --accent-foreground: 40 25% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 345 60% 30%;
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 345 45% 35%;
 
-    --radius: 0.25rem;
+    --radius: 0rem;
 
-    --wine: 345 60% 30%;
-    --wine-light: 345 40% 45%;
-    --wine-dark: 345 70% 20%;
-    --charcoal: 0 0% 20%;
-    --charcoal-light: 0 0% 35%;
-    --cream: 40 30% 96%;
-    --gold: 38 60% 55%;
+    --wine: 345 45% 35%;
+    --wine-light: 345 30% 50%;
+    --wine-dark: 345 55% 22%;
+    --charcoal: 0 0% 12%;
+    --charcoal-light: 0 0% 40%;
+    --cream: 40 25% 97%;
+    --cream-dark: 40 15% 93%;
+    --gold: 38 50% 55%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -70,27 +71,16 @@
 }
 
 @layer utilities {
-  .text-gradient-wine {
-    background: linear-gradient(135deg, hsl(var(--wine)) 0%, hsl(var(--wine-light)) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .bg-wine-gradient {
-    background: linear-gradient(135deg, hsl(var(--wine-dark)) 0%, hsl(var(--wine)) 50%, hsl(var(--wine-light)) 100%);
-  }
-
   .section-padding {
-    @apply px-5 py-16 md:px-8 md:py-24 lg:px-16 lg:py-32;
+    @apply px-6 py-20 md:px-12 md:py-32 lg:px-20 lg:py-40;
   }
 }
 
 @layer components {
   .animate-on-scroll {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .animate-on-scroll.visible {
