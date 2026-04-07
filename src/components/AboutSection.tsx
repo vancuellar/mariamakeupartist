@@ -26,19 +26,17 @@ const AboutSection = () => {
             </h2>
 
             <div className="space-y-6">
-              <div>
-                
-                <p className="font-body text-sm leading-[1.9] text-cream/70">
-                  La belleza es una arquitectura de luz y sombra. No se trata de ocultar, sino de revelar
-                  la luminosidad inherente de cada persona. Con un enfoque enraizado en el mundo editorial
-                  de alta moda, fundé mi estudio para cerrar la brecha entre la precisión de pasarela
-                  y la atemporalidad nupcial.
-                </p>
-              </div>
-              <p className="font-body text-sm leading-[1.9] text-cream/50 italic">
-                Beauty is an architecture of light and shadow. It is not about masking, but about revealing
-                the inherent luminosity of each person. With over years of experience in bridal and editorial
-                work, I invite you to experience a morning ritual that is calm, luxurious, and unequivocally yours.
+              <p className="font-body text-sm leading-[1.9] text-cream/70">
+                Hola, soy Maria. Tengo 21 años, vengo de la frontera entre Paraguay y Brasil, llegué a Playa del Carmen en noviembre de 2024 enamorada de este lugar, del mar, de los sueños y de la rutina relajada.
+              </p>
+              <p className="font-body text-sm leading-[1.9] text-cream/70">
+                El maquillaje me acompaña desde niña, crecí en el medio artístico como bailarina y reina de belleza, y fue cuando empecé a encantarme por el poder del maquillaje.
+              </p>
+              <p className="font-body text-sm leading-[1.9] text-cream/70">
+                Me gusta transmitir seguridad a mis clientas y alumnas por medio de mi profesionalismo y amabilidad, mi objetivo en cada look que realizo es hacer con que se sientan plenas referente a cómo lucen y que así puedan disfrutar de ese momento especial.
+              </p>
+              <p className="font-body text-sm leading-[1.9] text-cream/70">
+                Me encanta una piel limpia, delicada aunque sea un maquillaje intenso, siempre manteniendo la feminidad y belleza natural, resaltando los rasgos de cada una. ♡
               </p>
             </div>
           </div>
