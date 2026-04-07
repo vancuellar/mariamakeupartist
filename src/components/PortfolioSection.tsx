@@ -1,6 +1,7 @@
 import { useState } from "react";
 import portfolio1 from "@/assets/portfolio-nupcial.jpeg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
+import fullGlamMain from "@/assets/portfolio-fullglam-main.jpeg";
+import fullGlamAlt from "@/assets/portfolio-fullglam-alt.jpeg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
