@@ -30,7 +30,7 @@ const images: PortfolioItem[] = [
   },
   { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
   { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "Pieles Maduras", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
-  { src: portfolio5, alt: "Natural Glow", tag: "Nupcial & Cortejo", title: "Natural Glow" },
+  { src: softGlam, alt: "Soft Glam", tag: "Eventos Sociales", title: "Soft Glam" },
   { src: portfolio6, alt: "Sunset Beauty", tag: "Evento", title: "Sunset Beauty" },
 ];
 
