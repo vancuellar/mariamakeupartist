@@ -11,7 +11,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.4s" }}
         >
            <span className="block font-body text-[0.9rem] md:text-[1.1rem] uppercase tracking-[0.3em] text-muted-foreground mb-4">Maria Neunfeld</span>
-          <span className="block font-belleza text-[1.8rem] md:text-[2.8rem] lg:text-[3.2rem] uppercase tracking-[0.15em] text-foreground">Makeup</span>
+          <span className="block font-belleza text-[1.8rem] md:text-[2.8rem] lg:text-[3.2rem] uppercase tracking-[0.15em] text-primary">Makeup</span>
           <span className="block font-script text-foreground text-[2.5rem] md:text-[4rem] lg:text-[5rem] -mt-2">Artist</span>
         </h1>
 
