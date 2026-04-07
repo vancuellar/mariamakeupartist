@@ -28,7 +28,7 @@ const AboutSection = () => {
 
             <div className="space-y-6">
               <div>
-                <p className="font-body text-[10px] uppercase tracking-[0.2em] text-primary mb-3">Filosofía</p>
+                
                 <p className="font-body text-sm leading-[1.9] text-cream/70">
                   La belleza es una arquitectura de luz y sombra. No se trata de ocultar, sino de revelar
                   la luminosidad inherente de cada persona. Con un enfoque enraizado en el mundo editorial
