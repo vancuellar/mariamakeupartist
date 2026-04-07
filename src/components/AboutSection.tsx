@@ -21,12 +21,6 @@ const AboutSection = () => {
 
           {/* Text */}
           <div className="animate-on-scroll order-2" style={{ transitionDelay: "150ms" }}>
-            <p className="font-body text-[11px] uppercase tracking-[0.4em] text-cream/40 mb-3">
-              Artista & Fundadora
-            </p>
-            <p className="font-body text-[11px] uppercase tracking-[0.3em] text-cream/30 mb-8">
-              Artist & Founder
-            </p>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-10">
               Maria{" "}
               <span className="italic text-primary">Neunfeld</span>
