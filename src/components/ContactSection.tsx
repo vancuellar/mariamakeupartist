@@ -25,7 +25,7 @@ const ContactSection = () => {
           {/* Right: Links */}
           <div className="animate-on-scroll space-y-10" style={{ transitionDelay: "150ms" }}>
             <a
-              href="https://wa.me/529841234567"
+              href="https://wa.me/529843206067"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-5 group"
