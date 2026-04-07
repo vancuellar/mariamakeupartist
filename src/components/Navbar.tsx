@@ -9,7 +9,7 @@ const leftLinks = [
 
 const rightLinks = [
   { href: "#portafolio", label: "Portafolio" },
-  { href: "#cursos", label: "Cursos" },
+  { href: "#cursos", label: "Automaquillaje" },
   { href: "#contacto", label: "Contacto" },
 ];
 
