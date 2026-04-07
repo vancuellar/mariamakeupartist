@@ -4,7 +4,7 @@ import fullGlamMain from "@/assets/portfolio-fullglam-main.jpeg";
 import fullGlamAlt from "@/assets/portfolio-fullglam-alt.jpeg";
 import pielesMadurasMain from "@/assets/portfolio-pieles-maduras-main.jpeg";
 import pielesMadurasAlt from "@/assets/portfolio-pieles-maduras-alt.jpeg";
-import portfolio5 from "@/assets/portfolio-5.jpg";
+import softGlam from "@/assets/portfolio-soft-glam.jpeg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 import quinceaneraGlamMain from "@/assets/lookbook-quinceanera-glam-main.jpeg";
 import quinceaneraGlamAlt from "@/assets/lookbook-quinceanera-glam-alt.jpeg";
