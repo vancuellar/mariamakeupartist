@@ -15,12 +15,20 @@ const HeroSection = () => {
           <span className="block font-script text-primary text-[2.5rem] md:text-[4rem] lg:text-[5rem] -mt-2">Artist</span>
         </h1>
 
-        <p
-          className="font-body text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-muted-foreground text-center lg:text-left max-w-sm mt-8 leading-[2] animate-fade-in-up"
+        <div
+          className="mt-8 animate-fade-in-up text-center lg:text-left max-w-sm"
           style={{ animationDelay: "0.6s" }}
         >
-          Realzando tu belleza natural con un enfoque de alta costura en la Riviera Maya. Para la novia moderna.
-        </p>
+          <p className="font-body text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-muted-foreground leading-[2]">
+            Realzando tu mejor versión en los momentos más especiales.
+          </p>
+          <p className="font-body text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-muted-foreground leading-[2] mt-1">
+            Maquillista profesional en la Riviera Maya
+          </p>
+          <p className="font-body text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-muted-foreground/70 leading-[2] mt-2">
+            Novias · Quinceañeras · Eventos Sociales · Sesión de Fotos
+          </p>
+        </div>
 
         <a
           href="https://wa.me/529841234567"
