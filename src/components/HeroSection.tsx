@@ -31,7 +31,7 @@ const HeroSection = () => {
         </div>
 
         <a
-          href="https://wa.me/529841234567"
+          href="https://wa.me/529843206067"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-12 inline-flex items-center gap-6 font-body text-[10px] uppercase tracking-[0.3em] text-foreground border border-foreground px-8 py-4 hover:bg-foreground hover:text-background transition-all duration-500 animate-fade-in-up group"

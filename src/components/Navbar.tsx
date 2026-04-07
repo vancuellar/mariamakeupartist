@@ -88,7 +88,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/529841234567"
+                href="https://wa.me/529843206067"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}

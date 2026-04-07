@@ -25,7 +25,7 @@ const ContactSection = () => {
           {/* Right: Links */}
           <div className="animate-on-scroll space-y-10" style={{ transitionDelay: "150ms" }}>
             <a
-              href="https://wa.me/529841234567"
+              href="https://wa.me/529843206067"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-5 group"
@@ -35,7 +35,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <span className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/70">WhatsApp</span>
-                <span className="block font-body text-xs text-cream/40 mt-1">+52 984 123 4567</span>
+                <span className="block font-body text-xs text-cream/40 mt-1">+52 984 320 6067</span>
               </div>
             </a>
 
@@ -55,7 +55,7 @@ const ContactSection = () => {
             </a>
 
             <a
-              href="mailto:info@marianeunfeld.com"
+              href="mailto:thomasneunfeld@gmail.com"
               className="flex items-center gap-5 group"
             >
               <div className="w-12 h-12 border border-cream/20 flex items-center justify-center group-hover:border-primary transition-colors duration-300">
@@ -63,7 +63,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <span className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/70">Email</span>
-                <span className="block font-body text-xs text-cream/40 mt-1">info@marianeunfeld.com</span>
+                <span className="block font-body text-xs text-cream/40 mt-1">thomasneunfeld@gmail.com</span>
               </div>
             </a>
 

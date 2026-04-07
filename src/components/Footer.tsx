@@ -18,7 +18,7 @@ const Footer = () => {
             <Instagram size={15} strokeWidth={1} />
           </a>
           <a
-            href="https://wa.me/529841234567"
+            href="https://wa.me/529843206067"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cream/20 hover:text-cream/60 transition-colors duration-300"
@@ -26,7 +26,7 @@ const Footer = () => {
             <MessageCircle size={15} strokeWidth={1} />
           </a>
           <a
-            href="mailto:info@marianeunfeld.com"
+            href="mailto:thomasneunfeld@gmail.com"
             className="text-cream/20 hover:text-cream/60 transition-colors duration-300"
           >
             <Mail size={15} strokeWidth={1} />

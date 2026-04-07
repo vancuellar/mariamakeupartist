@@ -85,7 +85,7 @@ const ServicesSection = () => {
                   ))}
                 </ul>
                 <a
-                  href="https://wa.me/529841234567"
+                  href="https://wa.me/529843206067"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-body text-[10px] uppercase tracking-[0.2em] text-foreground hover:text-primary transition-colors duration-300 group"

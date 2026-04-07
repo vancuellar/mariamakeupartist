@@ -54,7 +54,7 @@ const CoursesSection = () => {
             </div>
 
             <a
-              href="https://wa.me/529841234567?text=Hola%20Maria,%20me%20interesa%20el%20curso%20de%20automaquillaje"
+              href="https://wa.me/529843206067?text=Hola%20Maria,%20me%20interesa%20el%20curso%20de%20automaquillaje"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-4 font-body text-[10px] uppercase tracking-[0.25em] text-foreground border border-foreground px-6 py-3 hover:bg-foreground hover:text-background transition-all duration-500 group"
