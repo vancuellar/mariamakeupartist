@@ -23,7 +23,10 @@ const HeroSection = () => {
             Realzando tu mejor versión en los momentos más especiales.
           </p>
           <p className="font-body text-[11px] md:text-[12px] uppercase tracking-[0.3em] text-muted-foreground/70 leading-[2] mt-2">
-            Maquillista profesional en la Riviera Maya · Novias · Quinceañeras · Eventos Sociales · Sesión de Fotos
+            Maquillista profesional en la Riviera Maya
+          </p>
+          <p className="font-body text-[11px] md:text-[12px] uppercase tracking-[0.3em] text-muted-foreground/70 leading-[2] mt-1">
+            Novias · Quinceañeras · Eventos Sociales · Sesión de Fotos
           </p>
         </div>
 
