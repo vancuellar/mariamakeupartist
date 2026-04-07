@@ -4,7 +4,7 @@ import logo from "@/assets/logo-transparent.png";
 
 const leftLinks = [
   { href: "#servicios", label: "Servicios" },
-  { href: "#sobre-mi", label: "La Artista" },
+  { href: "#sobre-mi", label: "Sobre Mí" },
 ];
 
 const rightLinks = [
