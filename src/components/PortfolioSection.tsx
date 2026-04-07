@@ -2,7 +2,8 @@ import { useState } from "react";
 import portfolio1 from "@/assets/portfolio-nupcial.jpeg";
 import fullGlamMain from "@/assets/portfolio-fullglam-main.jpeg";
 import fullGlamAlt from "@/assets/portfolio-fullglam-alt.jpeg";
-import portfolio4 from "@/assets/portfolio-4.jpg";
+import pielesMadurasMain from "@/assets/portfolio-pieles-maduras-main.jpeg";
+import pielesMadurasAlt from "@/assets/portfolio-pieles-maduras-alt.jpeg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 import quinceaneraGlamMain from "@/assets/lookbook-quinceanera-glam-main.jpeg";
@@ -28,7 +29,7 @@ const images: PortfolioItem[] = [
     secondaryAlt: "Quinceañera Glam segunda foto",
   },
   { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
-  { src: portfolio4, alt: "Editorial Look", tag: "Editorial", title: "Editorial Look" },
+  { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "Pieles Maduras", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
   { src: portfolio5, alt: "Natural Glow", tag: "Nupcial & Cortejo", title: "Natural Glow" },
   { src: portfolio6, alt: "Sunset Beauty", tag: "Evento", title: "Sunset Beauty" },
 ];
