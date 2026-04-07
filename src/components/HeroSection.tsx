@@ -28,7 +28,6 @@ const HeroSection = () => {
           <p className="font-body text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-muted-foreground/70 leading-[2] mt-1 whitespace-nowrap">
             Novias · Quinceañeras · Eventos Sociales · Sesión de Fotos
           </p>
-          </p>
         </div>
 
         <a
