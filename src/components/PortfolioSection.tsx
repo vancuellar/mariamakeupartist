@@ -4,7 +4,7 @@ import fullGlamMain from "@/assets/portfolio-fullglam-main.jpeg";
 import fullGlamAlt from "@/assets/portfolio-fullglam-alt.jpeg";
 import pielesMadurasMain from "@/assets/portfolio-pieles-maduras-main.jpeg";
 import pielesMadurasAlt from "@/assets/portfolio-pieles-maduras-alt.jpeg";
-import portfolio5 from "@/assets/portfolio-5.jpg";
+import softGlam from "@/assets/portfolio-soft-glam.jpeg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
 import quinceaneraGlamMain from "@/assets/lookbook-quinceanera-glam-main.jpeg";
 import quinceaneraGlamAlt from "@/assets/lookbook-quinceanera-glam-alt.jpeg";
@@ -30,7 +30,7 @@ const images: PortfolioItem[] = [
   },
   { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
   { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "Pieles Maduras", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
-  { src: portfolio5, alt: "Natural Glow", tag: "Nupcial & Cortejo", title: "Natural Glow" },
+  { src: softGlam, alt: "Soft Glam", tag: "Eventos Sociales", title: "Soft Glam" },
   { src: portfolio6, alt: "Sunset Beauty", tag: "Evento", title: "Sunset Beauty" },
 ];
 
