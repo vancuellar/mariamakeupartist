@@ -23,7 +23,7 @@ const CoursesSection = () => {
               <span className="italic text-primary">Conmigo</span>
             </h2>
             <p className="font-heading text-base italic text-muted-foreground">
-              Learn With Me
+              Curso de Automaquillaje
             </p>
           </div>
 
