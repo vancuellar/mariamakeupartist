@@ -18,6 +18,7 @@ export default {
         body: ['"Montserrat"', 'sans-serif'],
         belleza: ['"Belleza"', 'sans-serif'],
         script: ['"Alex Brush"', 'cursive'],
+        pinyon: ['"Pinyon Script"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
