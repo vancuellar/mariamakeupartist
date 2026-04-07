@@ -17,7 +17,7 @@ export default {
         heading: ['"Cormorant Garamond"', 'serif'],
         body: ['"Montserrat"', 'sans-serif'],
         belleza: ['"Belleza"', 'sans-serif'],
-        script: ['"Great Vibes"', 'cursive'],
+        script: ['"Alex Brush"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
