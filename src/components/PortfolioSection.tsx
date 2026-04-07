@@ -1,6 +1,7 @@
 import { useState } from "react";
 import portfolio1 from "@/assets/portfolio-nupcial.jpeg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
+import fullGlamMain from "@/assets/portfolio-fullglam-main.jpeg";
+import fullGlamAlt from "@/assets/portfolio-fullglam-alt.jpeg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
@@ -26,7 +27,7 @@ const images: PortfolioItem[] = [
     secondarySrc: quinceaneraGlamAlt,
     secondaryAlt: "Quinceañera Glam segunda foto",
   },
-  { src: portfolio3, alt: "Golden Hour Session", tag: "Nupcial", title: "Golden Hour Session" },
+  { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
   { src: portfolio4, alt: "Editorial Look", tag: "Editorial", title: "Editorial Look" },
   { src: portfolio5, alt: "Natural Glow", tag: "Nupcial & Cortejo", title: "Natural Glow" },
   { src: portfolio6, alt: "Sunset Beauty", tag: "Evento", title: "Sunset Beauty" },
