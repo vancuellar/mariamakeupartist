@@ -16,6 +16,8 @@ export default {
       fontFamily: {
         heading: ['"Cormorant Garamond"', 'serif'],
         body: ['"Montserrat"', 'sans-serif'],
+        belleza: ['"Belleza"', 'sans-serif'],
+        script: ['"Great Vibes"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
