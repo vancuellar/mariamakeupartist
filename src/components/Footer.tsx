@@ -26,7 +26,7 @@ const Footer = () => {
             <MessageCircle size={15} strokeWidth={1} />
           </a>
           <a
-            href="mailto:info@marianeunfeld.com"
+            href="mailto:thomasneunfeld@gmail.com"
             className="text-cream/20 hover:text-cream/60 transition-colors duration-300"
           >
             <Mail size={15} strokeWidth={1} />

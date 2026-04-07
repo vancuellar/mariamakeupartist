@@ -63,7 +63,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <span className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/70">Email</span>
-                <span className="block font-body text-xs text-cream/40 mt-1">info@marianeunfeld.com</span>
+                <span className="block font-body text-xs text-cream/40 mt-1">thomasneunfeld@gmail.com</span>
               </div>
             </a>
 
