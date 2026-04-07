@@ -25,7 +25,7 @@ const HeroSection = () => {
           <p className="font-body text-[13px] md:text-[14px] uppercase tracking-[0.3em] text-muted-foreground/70 leading-[2] mt-2">
             Maquillista profesional en la Riviera Maya
           </p>
-          <p className="font-body text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-muted-foreground/70 leading-[2] mt-1 whitespace-nowrap">
+          <p className="font-body text-[8.5px] md:text-[9.5px] uppercase tracking-[0.2em] text-muted-foreground/70 leading-[2] mt-1 whitespace-nowrap">
             Novias · Quinceañeras · Eventos Sociales · Sesión de Fotos
           </p>
         </div>
