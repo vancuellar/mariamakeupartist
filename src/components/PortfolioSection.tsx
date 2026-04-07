@@ -17,7 +17,7 @@ type PortfolioItem = {
 };
 
 const images: PortfolioItem[] = [
-  { src: portfolio1, alt: "Riviera Elegance", tag: "Nupcial", title: "Riviera Elegance" },
+  { src: portfolio1, alt: "Soft Bride", tag: "Bodas", title: "Soft Bride" },
   {
     src: quinceaneraGlamMain,
     alt: "Quinceañera Glam principal",
