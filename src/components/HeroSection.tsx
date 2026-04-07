@@ -1,80 +1,57 @@
+import { ArrowRight } from "lucide-react";
 import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden">
-      {/* Top bar text */}
-      <div className="absolute top-0 left-0 right-0 pt-24 md:pt-28 text-center">
+    <section className="min-h-screen flex flex-col lg:flex-row">
+      {/* Left: Text */}
+      <div className="flex-1 flex flex-col justify-center items-center lg:items-start px-8 md:px-16 lg:px-20 py-32 lg:py-0">
         <p
-          className="font-body text-[10px] md:text-[11px] uppercase tracking-[0.35em] text-muted-foreground animate-fade-in-up"
-          style={{ animationDelay: "0.3s" }}
+          className="font-body text-[9px] md:text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-8 animate-fade-in-up"
+          style={{ animationDelay: "0.2s" }}
         >
-          Natural Sophisticated Makeup Artistry
+          Makeup Artist
         </p>
+
+        <h1
+          className="font-heading text-[2.8rem] md:text-[4.5rem] lg:text-[5.5rem] font-light leading-[0.95] tracking-[0.04em] text-foreground mb-2 animate-fade-in-up text-center lg:text-left"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <span className="block uppercase tracking-[0.15em] text-[1.8rem] md:text-[2.8rem] lg:text-[3.2rem] font-body font-light">Belleza</span>
+          <span className="italic text-primary">Natural</span>
+        </h1>
+
+        <p
+          className="font-body text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-muted-foreground text-center lg:text-left max-w-sm mt-8 leading-[2] animate-fade-in-up"
+          style={{ animationDelay: "0.6s" }}
+        >
+          Realzando tu belleza natural con un enfoque de alta costura en la Riviera Maya. Para la novia moderna.
+        </p>
+
+        <a
+          href="https://wa.me/529841234567"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-12 inline-flex items-center gap-6 font-body text-[10px] uppercase tracking-[0.3em] text-foreground border border-foreground px-8 py-4 hover:bg-foreground hover:text-background transition-all duration-500 animate-fade-in-up group"
+          style={{ animationDelay: "0.8s" }}
+        >
+          Reservar Cita
+          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
       </div>
 
-      <div className="px-6 md:px-12 lg:px-20 w-full max-w-7xl mx-auto">
-        {/* Name */}
-        <div className="text-center mb-16 md:mb-20">
-          <h1
-            className="font-heading text-[3.2rem] md:text-[5.5rem] lg:text-[7rem] font-light leading-[0.95] tracking-[0.02em] text-foreground animate-fade-in-up"
-            style={{ animationDelay: "0.5s" }}
-          >
-            Maria Neunfeld
-          </h1>
-          <div
-            className="mt-8 animate-fade-in-up"
-            style={{ animationDelay: "0.8s" }}
-          >
-            <p className="font-body text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-              Playa del Carmen & Riviera Maya
-            </p>
-          </div>
-        </div>
-
-        {/* Asymmetric photo layout */}
-        <div
-          className="grid grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto animate-fade-in-up"
-          style={{ animationDelay: "1s" }}
-        >
-          <div className="aspect-[3/4] overflow-hidden mt-8 md:mt-16">
-            <img
-              src={portfolio1}
-              alt="Bridal makeup by Maria Neunfeld"
-              width={800}
-              height={1024}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="aspect-[3/4] overflow-hidden">
-            <img
-              src={portfolio3}
-              alt="Event makeup by Maria Neunfeld"
-              width={800}
-              height={1024}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        {/* Tagline below photos */}
-        <div
-          className="text-center mt-12 md:mt-16 animate-fade-in-up"
-          style={{ animationDelay: "1.3s" }}
-        >
-          <p className="font-heading text-lg md:text-xl italic text-muted-foreground mb-8">
-            Realza tu belleza natural
-          </p>
-          <a
-            href="https://wa.me/529841234567"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-body text-[11px] uppercase tracking-[0.25em] text-foreground border-b border-foreground pb-1 hover:text-primary hover:border-primary transition-colors duration-500"
-          >
-            Reservar / Book Now
-          </a>
-        </div>
+      {/* Right: Image */}
+      <div
+        className="flex-1 min-h-[60vh] lg:min-h-screen animate-fade-in"
+        style={{ animationDelay: "0.3s" }}
+      >
+        <img
+          src={portfolio1}
+          alt="Maquillaje nupcial por Maria Neunfeld"
+          width={1200}
+          height={1600}
+          className="w-full h-full object-cover"
+        />
       </div>
     </section>
   );

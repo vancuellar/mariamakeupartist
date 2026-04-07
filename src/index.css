@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    --background: 40 25% 97%;
-    --foreground: 0 0% 12%;
+    --background: 40 20% 96%;
+    --foreground: 0 0% 15%;
 
-    --card: 40 20% 95%;
-    --card-foreground: 0 0% 12%;
+    --card: 40 15% 94%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 40 25% 97%;
-    --popover-foreground: 0 0% 12%;
+    --popover: 40 20% 96%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 345 45% 35%;
-    --primary-foreground: 40 25% 97%;
+    --primary: 345 55% 38%;
+    --primary-foreground: 40 20% 96%;
 
-    --secondary: 40 15% 93%;
-    --secondary-foreground: 0 0% 12%;
+    --secondary: 40 12% 92%;
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 40 10% 92%;
+    --muted: 40 8% 90%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 345 45% 35%;
-    --accent-foreground: 40 25% 97%;
+    --accent: 345 55% 38%;
+    --accent-foreground: 40 20% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 10% 88%;
-    --input: 40 10% 88%;
-    --ring: 345 45% 35%;
+    --border: 40 8% 88%;
+    --input: 40 8% 88%;
+    --ring: 345 55% 38%;
 
     --radius: 0rem;
 
-    --wine: 345 45% 35%;
-    --wine-light: 345 30% 50%;
-    --wine-dark: 345 55% 22%;
-    --charcoal: 0 0% 12%;
-    --charcoal-light: 0 0% 40%;
-    --cream: 40 25% 97%;
-    --cream-dark: 40 15% 93%;
+    --wine: 345 55% 38%;
+    --wine-light: 345 35% 52%;
+    --wine-dark: 345 60% 25%;
+    --charcoal: 0 0% 10%;
+    --charcoal-light: 0 0% 35%;
+    --cream: 40 20% 96%;
+    --cream-dark: 40 12% 92%;
     --gold: 38 50% 55%;
 
     --sidebar-background: 0 0% 98%;
@@ -87,4 +87,13 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
 }
