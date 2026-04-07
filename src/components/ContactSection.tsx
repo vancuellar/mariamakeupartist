@@ -55,7 +55,7 @@ const ContactSection = () => {
             </a>
 
             <a
-              href="mailto:info@marianeunfeld.com"
+              href="mailto:thomasneunfeld@gmail.com"
               className="flex items-center gap-5 group"
             >
               <div className="w-12 h-12 border border-cream/20 flex items-center justify-center group-hover:border-primary transition-colors duration-300">
