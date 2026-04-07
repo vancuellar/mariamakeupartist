@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const leftLinks = [
   { href: "#servicios", label: "Servicios" },
@@ -46,9 +47,8 @@ const Navbar = () => {
         </ul>
 
         {/* Center logo */}
-        <a href="#" className="font-heading text-xl md:text-2xl tracking-[0.08em] text-foreground lg:text-center lg:flex-1 flex justify-center">
-          <span className="font-light">Maria</span>{" "}
-          <span className="italic ml-1">Neunfeld</span>
+        <a href="#" className="lg:text-center lg:flex-1 flex justify-center">
+          <img src={logo} alt="Maria Neunfeld Makeup" className="h-10 md:h-12 w-auto" />
         </a>
 
         {/* Right links (desktop) */}
