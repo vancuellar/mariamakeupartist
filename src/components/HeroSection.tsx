@@ -19,7 +19,7 @@ const HeroSection = () => {
           className="mt-8 animate-fade-in-up text-center lg:text-left max-w-sm"
           style={{ animationDelay: "0.6s" }}
         >
-          <p className="font-body text-[11px] md:text-[12px] uppercase tracking-[0.3em] text-muted-foreground leading-[2]">
+          <p className="font-body text-[12px] md:text-[13px] uppercase tracking-[0.3em] text-foreground leading-[2]">
             Realzando tu mejor versión en los momentos más especiales.
           </p>
           <p className="font-body text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-muted-foreground/70 leading-[2] mt-2">
