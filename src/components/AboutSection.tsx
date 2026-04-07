@@ -21,9 +21,9 @@ const AboutSection = () => {
 
           {/* Text */}
           <div className="animate-on-scroll order-2" style={{ transitionDelay: "150ms" }}>
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-10">
+            <h2 className="font-script text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-10">
               Maria{" "}
-              <span className="italic text-primary">Neunfeld</span>
+              <span className="text-primary">Neunfeld</span>
             </h2>
 
             <div className="space-y-6">
