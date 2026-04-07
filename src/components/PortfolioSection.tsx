@@ -1,5 +1,5 @@
 import { useState } from "react";
-import portfolio1 from "@/assets/portfolio-1.jpg";
+import portfolio1 from "@/assets/portfolio-nupcial.jpeg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
