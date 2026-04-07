@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* Center logo */}
         <a href="#" className="lg:text-center lg:flex-1 flex justify-center">
-          <img src={logo} alt="Maria Neunfeld Makeup" className="h-[42px] md:h-[50px] w-auto" />
+          <img src={logo} alt="Maria Neunfeld Makeup" className="h-[46px] md:h-[55px] w-auto" />
         </a>
 
         {/* Right links (desktop) */}
