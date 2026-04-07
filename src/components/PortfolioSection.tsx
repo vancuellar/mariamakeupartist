@@ -27,7 +27,7 @@ const images: PortfolioItem[] = [
     secondarySrc: quinceaneraGlamAlt,
     secondaryAlt: "Quinceañera Glam segunda foto",
   },
-  { src: portfolio3, alt: "Golden Hour Session", tag: "Nupcial", title: "Golden Hour Session" },
+  { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
   { src: portfolio4, alt: "Editorial Look", tag: "Editorial", title: "Editorial Look" },
   { src: portfolio5, alt: "Natural Glow", tag: "Nupcial & Cortejo", title: "Natural Glow" },
   { src: portfolio6, alt: "Sunset Beauty", tag: "Evento", title: "Sunset Beauty" },
