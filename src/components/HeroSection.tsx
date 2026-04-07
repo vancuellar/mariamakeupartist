@@ -7,18 +7,18 @@ const HeroSection = () => {
       {/* Left: Text */}
       <div className="flex-1 flex flex-col justify-center items-center lg:items-start px-8 md:px-16 lg:px-20 py-32 lg:py-0">
         <p
-          className="font-body text-[9px] md:text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-8 animate-fade-in-up"
+          className="font-body text-[9px] md:text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4 animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Makeup Artist
+          Maria Neunfeld
         </p>
 
         <h1
           className="font-heading text-[2.8rem] md:text-[4.5rem] lg:text-[5.5rem] font-light leading-[0.95] tracking-[0.04em] text-foreground mb-2 animate-fade-in-up text-center lg:text-left"
           style={{ animationDelay: "0.4s" }}
         >
-          <span className="block uppercase tracking-[0.15em] text-[1.8rem] md:text-[2.8rem] lg:text-[3.2rem] font-body font-light">Belleza</span>
-          <span className="italic text-primary">Natural</span>
+          <span className="block uppercase tracking-[0.15em] text-[1.8rem] md:text-[2.8rem] lg:text-[3.2rem] font-body font-light">Makeup</span>
+          <span className="italic text-primary">Artist</span>
         </h1>
 
         <p
