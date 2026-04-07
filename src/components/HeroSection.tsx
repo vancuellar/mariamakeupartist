@@ -10,7 +10,7 @@ const HeroSection = () => {
           className="font-heading text-[2.8rem] md:text-[4.5rem] lg:text-[5.5rem] font-light leading-[0.95] tracking-[0.04em] text-foreground mb-2 animate-fade-in-up text-center lg:text-left"
           style={{ animationDelay: "0.4s" }}
         >
-           <span className="block font-heading text-[0.85rem] md:text-[1rem] uppercase tracking-[0.4em] text-muted-foreground mb-4">Maria Neunfeld</span>
+           <span className="block font-heading text-[1.1rem] md:text-[1.3rem] uppercase tracking-[0.4em] text-muted-foreground mb-4">Maria Neunfeld</span>
           <span className="block font-belleza text-[1.8rem] md:text-[2.8rem] lg:text-[3.2rem] uppercase tracking-[0.15em]">Makeup</span>
           <span className="block font-script text-primary text-[2.5rem] md:text-[4rem] lg:text-[5rem] -mt-2">Artist</span>
         </h1>
