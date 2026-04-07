@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import portfolio1 from "@/assets/portfolio-1.jpg";
+import heroMain from "@/assets/hero-main.jpeg";
 
 const HeroSection = () => {
   return (
@@ -46,7 +46,7 @@ const HeroSection = () => {
         style={{ animationDelay: "0.3s" }}
       >
         <img
-          src={portfolio1}
+          src={heroMain}
           alt="Maquillaje nupcial por Maria Neunfeld"
           width={1200}
           height={1600}
