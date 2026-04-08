@@ -50,8 +50,7 @@ const ContactSection = () => {
               Hablemos
             </h2>
             <p className="font-body text-sm text-cream/50 leading-[1.9] mt-8 max-w-sm">
-              Este primer contacto está diseñado para entender tu visión y necesidades,
-              asegurando una experiencia de primer nivel para tu día especial.
+              Cuéntame sobre tu evento y juntas crearemos el look perfecto para ti, este es el primer paso hacia tu mejor versión para tu día especial.
             </p>
 
             <div className="space-y-8 mt-12">
