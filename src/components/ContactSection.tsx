@@ -49,9 +49,6 @@ const ContactSection = () => {
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-4">
               Hablemos
             </h2>
-            <p className="font-heading text-base italic text-cream/40">
-              For the modern bride
-            </p>
             <p className="font-body text-sm text-cream/50 leading-[1.9] mt-8 max-w-sm">
               Este primer contacto está diseñado para entender tu visión y necesidades,
               asegurando una experiencia de primer nivel para tu día especial.
