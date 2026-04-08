@@ -30,7 +30,7 @@ const images: PortfolioItem[] = [
     secondaryAlt: "Quinceañera Glam segunda foto",
   },
   { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
-  { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "Pieles Maduras", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
+  { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
   { src: softGlam, alt: "Soft Glam", tag: "Eventos Sociales", title: "Soft Glam" },
   { src: sesionMain, alt: "Sesión de Fotos", tag: "Sesión de Fotos", title: "Sesión de Fotos", secondarySrc: sesionAlt, secondaryAlt: "Sesión de Fotos segunda foto" },
 ];
