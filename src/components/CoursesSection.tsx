@@ -37,8 +37,7 @@ const CoursesSection = () => {
             </div>
 
             <p className="font-body text-sm text-muted-foreground leading-[1.9] mb-8">
-              Curso personalizado donde aprenderás las técnicas esenciales para lograr un maquillaje
-              profesional desde la comodidad de tu hogar. Incluye kit de práctica y materiales.
+              Aquí aprenderás todo lo que necesitas, paso a paso, sin complicaciones y con mucho cariño. ¡Empecemos juntas!
             </p>
 
             <div className="space-y-3 mb-10">
