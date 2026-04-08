@@ -43,11 +43,6 @@ const CoursesSection = () => {
             </p>
 
             <p className="font-body text-sm text-foreground mb-2">Aprenderás dos looks:</p>
-            <div className="flex gap-3 mb-8">
-              <img src={curso1} alt="Automaquillaje natural" className="w-28 h-36 object-cover rounded-sm" />
-              <img src={curso2} alt="Automaquillaje glam" className="w-28 h-36 object-cover rounded-sm" />
-            </div>
-
             <p className="font-body text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-10">
               Natural Look · Soft Glam
             </p>
