@@ -15,12 +15,9 @@ const CoursesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
           {/* Left: Header */}
           <div className="animate-on-scroll">
-            <p className="font-body text-[9px] uppercase tracking-[0.4em] text-muted-foreground mb-3">
-              Educación
-            </p>
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4">
-              Aprende{" "}
-              <span className="italic text-primary">Conmigo</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4">
+              <span className="font-belleza uppercase tracking-[0.15em]">Aprende</span>{" "}
+              <span className="font-pinyon text-primary">Conmigo</span>
             </h2>
             <p className="font-heading text-base italic text-muted-foreground">
               Curso de Automaquillaje
