@@ -44,7 +44,7 @@ const ContactSection = () => {
           {/* Left: Info */}
           <div className="animate-on-scroll">
             <p className="font-body text-[9px] uppercase tracking-[0.4em] text-cream/40 mb-3">
-              Contacto
+              Tu día especial empieza aquí
             </p>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-4">
               Hablemos
