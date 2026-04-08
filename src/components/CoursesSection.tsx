@@ -1,4 +1,6 @@
 import { ArrowRight } from "lucide-react";
+import curso1 from "@/assets/curso-1.jpeg";
+import curso2 from "@/assets/curso-2.jpeg";
 
 const CoursesSection = () => {
   return (
