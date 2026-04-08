@@ -5,7 +5,8 @@ import fullGlamAlt from "@/assets/portfolio-fullglam-alt.jpeg";
 import pielesMadurasMain from "@/assets/portfolio-pieles-maduras-main.jpeg";
 import pielesMadurasAlt from "@/assets/portfolio-pieles-maduras-alt.jpeg";
 import softGlam from "@/assets/portfolio-soft-glam.jpeg";
-import portfolio6 from "@/assets/portfolio-6.jpg";
+import sesionMain from "@/assets/portfolio-sesion-main.jpeg";
+import sesionAlt from "@/assets/portfolio-sesion-alt.jpeg";
 import quinceaneraGlamMain from "@/assets/lookbook-quinceanera-glam-main.jpeg";
 import quinceaneraGlamAlt from "@/assets/lookbook-quinceanera-glam-alt.jpeg";
 
@@ -31,7 +32,7 @@ const images: PortfolioItem[] = [
   { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
   { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "Pieles Maduras", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
   { src: softGlam, alt: "Soft Glam", tag: "Eventos Sociales", title: "Soft Glam" },
-  { src: portfolio6, alt: "Sunset Beauty", tag: "Evento", title: "Sunset Beauty" },
+  { src: sesionMain, alt: "Sesión de Fotos", tag: "Sesión de Fotos", title: "Sesión de Fotos", secondarySrc: sesionAlt, secondaryAlt: "Sesión de Fotos segunda foto" },
 ];
 
 const PortfolioSection = () => {
