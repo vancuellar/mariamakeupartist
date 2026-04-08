@@ -17,8 +17,8 @@ const CoursesSection = () => {
               Curso de Automaquillaje
             </p>
             <div className="flex gap-3 mt-6">
-              <img src={curso1} alt="Automaquillaje natural" className="w-28 h-36 object-cover rounded-sm" />
-              <img src={curso2} alt="Automaquillaje glam" className="w-28 h-36 object-cover rounded-sm" />
+              <img src={curso1} alt="Automaquillaje natural" className="w-32 h-[165px] object-cover rounded-sm" />
+              <img src={curso2} alt="Automaquillaje glam" className="w-32 h-[165px] object-cover rounded-sm" />
             </div>
           </div>
 
