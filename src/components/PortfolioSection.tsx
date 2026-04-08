@@ -30,9 +30,9 @@ const images: PortfolioItem[] = [
     secondaryAlt: "Quinceañera Glam segunda foto",
   },
   { src: fullGlamMain, alt: "Full Glam", tag: "Eventos Sociales", title: "Full Glam", secondarySrc: fullGlamAlt, secondaryAlt: "Full Glam segunda foto" },
-  { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "Pieles Maduras", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
+  { src: pielesMadurasMain, alt: "Pieles Maduras", tag: "", title: "Pieles Maduras", secondarySrc: pielesMadurasAlt, secondaryAlt: "Pieles Maduras segunda foto" },
   { src: softGlam, alt: "Soft Glam", tag: "Eventos Sociales", title: "Soft Glam" },
-  { src: sesionMain, alt: "Sesión de Fotos", tag: "Sesión de Fotos", title: "Sesión de Fotos", secondarySrc: sesionAlt, secondaryAlt: "Sesión de Fotos segunda foto" },
+  { src: sesionMain, alt: "Sesión de Fotos", tag: "", title: "Sesión de Fotos", secondarySrc: sesionAlt, secondaryAlt: "Sesión de Fotos segunda foto" },
 ];
 
 const PortfolioSection = () => {
@@ -95,9 +95,11 @@ const PortfolioSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-foreground/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                   <div className="flex h-full flex-col justify-end p-6">
                     <div className="translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                      <p className="font-body text-[9px] uppercase tracking-[0.3em] text-background/80 mb-1">
-                        {img.tag}
-                      </p>
+                      {img.tag ? (
+                        <p className="font-body text-[9px] uppercase tracking-[0.3em] text-background/80 mb-1">
+                          {img.tag}
+                        </p>
+                      ) : null}
                       <p className="font-heading text-lg font-light text-background">
                         {img.title}
                       </p>
