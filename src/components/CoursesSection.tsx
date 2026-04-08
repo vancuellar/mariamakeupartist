@@ -19,7 +19,7 @@ const CoursesSection = () => {
               <span className="font-belleza uppercase tracking-[0.15em]">Aprende</span>{" "}
               <span className="font-pinyon text-primary">Conmigo</span>
             </h2>
-            <p className="font-heading text-base italic text-muted-foreground">
+            <p className="font-heading text-xl md:text-2xl italic text-muted-foreground">
               Curso de Automaquillaje
             </p>
           </div>
@@ -31,7 +31,7 @@ const CoursesSection = () => {
               <div>
                 <p className="font-body text-[9px] uppercase tracking-[0.3em] text-muted-foreground">Módulo 1</p>
                 <h3 className="font-heading text-xl font-light text-foreground">
-                  Automaquillaje para Principiantes
+                  Iniciantes
                 </h3>
               </div>
             </div>
