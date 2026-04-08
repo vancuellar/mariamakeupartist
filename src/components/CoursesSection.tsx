@@ -13,9 +13,13 @@ const CoursesSection = () => {
               <span className="font-belleza uppercase tracking-[0.15em]">Aprende</span>{" "}
               <span className="font-pinyon text-primary">Conmigo</span>
             </h2>
-            <p className="font-heading text-xl md:text-2xl italic text-muted-foreground">
+            <p className="font-heading text-xl md:text-2xl italic text-muted-foreground mb-6">
               Curso de Automaquillaje
             </p>
+            <div className="flex gap-3">
+              <img src={curso1} alt="Automaquillaje natural" className="w-28 h-36 object-cover rounded-sm" />
+              <img src={curso2} alt="Automaquillaje glam" className="w-28 h-36 object-cover rounded-sm" />
+            </div>
           </div>
 
           {/* Right: Content */}
@@ -39,11 +43,6 @@ const CoursesSection = () => {
             </p>
 
             <p className="font-body text-sm text-foreground mb-2">Aprenderás dos looks:</p>
-            <div className="flex gap-3 mb-8">
-              <img src={curso1} alt="Automaquillaje natural" className="w-28 h-36 object-cover rounded-sm" />
-              <img src={curso2} alt="Automaquillaje glam" className="w-28 h-36 object-cover rounded-sm" />
-            </div>
-
             <p className="font-body text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-10">
               Natural Look · Soft Glam
             </p>
