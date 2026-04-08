@@ -1,13 +1,5 @@
 import { ArrowRight } from "lucide-react";
 
-const topics = [
-  "Preparación y cuidado de la piel",
-  "Base, corrector y contorno",
-  "Cejas perfectas",
-  "Ojos ahumados paso a paso",
-  "Labios y acabado final",
-];
-
 const CoursesSection = () => {
   return (
     <section id="cursos" className="section-padding">
@@ -36,18 +28,18 @@ const CoursesSection = () => {
               </div>
             </div>
 
-            <p className="font-body text-sm text-muted-foreground leading-[1.9] mb-8">
-              Aquí aprenderás todo lo que necesitas, paso a paso, sin complicaciones y con mucho cariño. ¡Empecemos juntas!
+            <p className="font-body text-sm text-muted-foreground leading-[1.9] mb-6">
+              Aquí aprenderás todo lo que necesitas, paso a paso, sin complicaciones y con mucho cariño. De iniciante a experta ¡Empecemos juntas!
             </p>
 
-            <div className="space-y-3 mb-10">
-              {topics.map((topic) => (
-                <div key={topic} className="flex items-center gap-3">
-                  <span className="text-primary text-xs">—</span>
-                  <span className="font-body text-sm text-foreground">{topic}</span>
-                </div>
-              ))}
-            </div>
+            <p className="font-body text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-6">
+              Clases Grupales · Personalizadas · En Línea
+            </p>
+
+            <p className="font-body text-sm text-foreground mb-2">Aprenderás dos looks:</p>
+            <p className="font-body text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-10">
+              Natural Look · Soft Glam
+            </p>
 
             <a
               href="https://wa.me/529843206067?text=Hola%20Maria,%20me%20interesa%20el%20curso%20de%20automaquillaje"
