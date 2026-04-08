@@ -37,15 +37,6 @@ const ServicesSection = () => {
   return (
     <section id="servicios" className="section-padding">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-6 animate-on-scroll">
-          <p className="font-body text-[10px] uppercase tracking-[0.35em] text-muted-foreground mb-3">
-            El Menú
-          </p>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-foreground">
-            Experiencias Curadas
-          </h2>
-          <p className="font-heading text-base italic text-muted-foreground mt-2">Curated Experiences</p>
-        </div>
 
         <div className="mt-16 space-y-0 divide-y divide-border">
           {services.map((service, i) => (
