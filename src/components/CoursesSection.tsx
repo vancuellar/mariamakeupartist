@@ -16,6 +16,10 @@ const CoursesSection = () => {
             <p className="font-heading text-xl md:text-2xl italic text-muted-foreground mb-6">
               Curso de Automaquillaje
             </p>
+            <div className="flex gap-3 mt-6">
+              <img src={curso1} alt="Automaquillaje natural" className="w-28 h-36 object-cover rounded-sm" />
+              <img src={curso2} alt="Automaquillaje glam" className="w-28 h-36 object-cover rounded-sm" />
+            </div>
           </div>
 
           {/* Right: Content */}
