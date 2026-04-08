@@ -116,16 +116,6 @@ const PortfolioSection = () => {
           })}
         </div>
 
-        <div className="text-center mt-16 animate-on-scroll">
-          <a
-            href="https://instagram.com/marianeunfeldmakeup"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 font-body text-[10px] uppercase tracking-[0.25em] text-foreground hover:text-primary transition-colors duration-500"
-          >
-            Sigue nuestro trabajo en Instagram
-          </a>
-        </div>
       </div>
     </section>
   );
