@@ -1,23 +1,38 @@
 import { Instagram, Mail, MessageCircle, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import { api } from "@/lib/api";
+
+const SERVICES = [
+  "Paquete Novia Clásico",
+  "Paquete Novia Gold",
+  "Paquete Quinceañera",
+  "Evento Social",
+  "Sesión de Fotos",
+  "Automaquillaje",
+  "Outro",
+];
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
+    service: "",
     eventDate: "",
     eventLocation: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim() || !formData.message.trim()) {
       toast({ title: "Por favor completa los campos requeridos", variant: "destructive" });
@@ -25,13 +40,28 @@ const ContactSection = () => {
     }
     setIsSubmitting(true);
 
-    const text = `Hola, soy ${formData.firstName.trim()} ${formData.lastName.trim()}.\nEmail: ${formData.email.trim()}${formData.eventDate ? `\nFecha del evento: ${formData.eventDate}` : ""}${formData.eventLocation ? `\nLocal del evento: ${formData.eventLocation.trim()}` : ""}\n\n${formData.message.trim()}`;
-    const url = `https://wa.me/529843206067?text=${encodeURIComponent(text)}`;
-    window.open(url, "_blank");
+    try {
+      await api.post("/bookings", {
+        first_name: formData.firstName.trim(),
+        last_name: formData.lastName.trim(),
+        email: formData.email.trim(),
+        phone: formData.phone.trim() || null,
+        service: formData.service || null,
+        event_date: formData.eventDate || null,
+        event_location: formData.eventLocation.trim() || null,
+        message: formData.message.trim(),
+      });
 
-    setIsSubmitting(false);
-    setFormData({ firstName: "", lastName: "", email: "", eventDate: "", eventLocation: "", message: "" });
-    toast({ title: "¡Mensaje enviado!", description: "Te redirigimos a WhatsApp." });
+      const text = `Hola, soy ${formData.firstName.trim()} ${formData.lastName.trim()}.\nEmail: ${formData.email.trim()}${formData.phone ? `\nTeléfono: ${formData.phone}` : ""}${formData.service ? `\nServicio: ${formData.service}` : ""}${formData.eventDate ? `\nFecha del evento: ${formData.eventDate}` : ""}${formData.eventLocation ? `\nLocal del evento: ${formData.eventLocation.trim()}` : ""}\n\n${formData.message.trim()}`;
+      window.open(`https://wa.me/529843206067?text=${encodeURIComponent(text)}`, "_blank");
+
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", service: "", eventDate: "", eventLocation: "", message: "" });
+      toast({ title: "¡Solicitud enviada!", description: "Tu agendamiento fue guardado y te redirigimos a WhatsApp." });
+    } catch {
+      toast({ title: "Error al enviar", description: "Intenta de nuevo o contáctanos por WhatsApp.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const inputClass =
@@ -98,45 +128,49 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">
-                    Nombre *
-                  </label>
+                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Nombre *</label>
                   <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} maxLength={100} className={inputClass} placeholder="Tu nombre" />
                 </div>
                 <div>
-                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">
-                    Apellido *
-                  </label>
+                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Apellido *</label>
                   <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} maxLength={100} className={inputClass} placeholder="Tu apellido" />
                 </div>
               </div>
 
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Email *</label>
+                  <input type="email" name="email" value={formData.email} onChange={handleChange} maxLength={255} className={inputClass} placeholder="tu@email.com" />
+                </div>
+                <div>
+                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Teléfono</label>
+                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} maxLength={30} className={inputClass} placeholder="+52 984 000 0000" />
+                </div>
+              </div>
+
               <div>
-                <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">
-                  Email *
-                </label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} maxLength={255} className={inputClass} placeholder="tu@email.com" />
+                <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Servicio</label>
+                <select name="service" value={formData.service} onChange={handleChange} className={`${inputClass} [&>option]:bg-zinc-900`}>
+                  <option value="">Selecciona un servicio...</option>
+                  {SERVICES.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">
-                    Día del evento
-                  </label>
+                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Día del evento</label>
                   <input type="date" name="eventDate" value={formData.eventDate} onChange={handleChange} className={`${inputClass} [color-scheme:dark]`} />
                 </div>
                 <div>
-                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">
-                    Local del evento
-                  </label>
+                  <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Local del evento</label>
                   <input type="text" name="eventLocation" value={formData.eventLocation} onChange={handleChange} maxLength={200} className={inputClass} placeholder="Hotel, playa, hacienda..." />
                 </div>
               </div>
 
               <div>
-                <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">
-                  Mensaje *
-                </label>
+                <label className="block font-body text-[10px] uppercase tracking-[0.2em] text-cream/50 mb-2">Mensaje *</label>
                 <textarea name="message" value={formData.message} onChange={handleChange} maxLength={1000} rows={4} className={`${inputClass} resize-none`} placeholder="Cuéntame sobre tu evento, estilo deseado, número de personas..." />
               </div>
 
@@ -146,7 +180,7 @@ const ContactSection = () => {
                 className="mt-4 flex items-center gap-3 font-body text-[10px] uppercase tracking-[0.3em] text-cream/70 border border-cream/20 px-8 py-4 hover:border-primary hover:text-primary transition-all duration-300 disabled:opacity-50"
               >
                 <Send className="w-4 h-4" strokeWidth={1} />
-                Enviar por WhatsApp
+                {isSubmitting ? "Enviando..." : "Solicitar Agendamiento"}
               </button>
             </form>
           </div>
